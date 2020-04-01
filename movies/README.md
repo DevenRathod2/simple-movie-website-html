@@ -1,0 +1,1 @@
+you movies will store here and after uploading you movie her then you need to add movie path on /index.html 
