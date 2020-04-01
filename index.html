@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='utf-8'>
+  <title>Deven Rathod -Free Movie Server</title>
+  <style>
+
+   body{
+    background-color: black;
+    padding: 20px;
+    font-family: Arial;
+    }
+
+   h1,h2{
+    color: green;
+    text-align: center;
+   }
+   nav{
+    color: green
+    position: fixed;
+   }
+
+   p1{
+    text-align: center;
+    color: green;
+   }
+   p3{
+    text-align: center;
+    padding-top: 250px;
+    color: green;
+   }
+   .c2{
+    
+   }
+ 
+.upspace{
+  padding-top: 150px;
+}
+.card{
+
+  align-content: center;
+  border-radius: 50%;
+  pa
+}
+
+.container {
+  position: relative;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 70%
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 70%
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: green;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  border-radius: 70%
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
+li a:hover {
+  background-color: white;
+
+} 
+
+/*all content css */
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+  padding: 20px;
+  /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.nbtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: green;
+  text-align: center;
+  position: center;
+
+}
+button{
+  margin: auto;
+
+}
+
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: green;
+   color: black;
+   padding-left: 50px;
+   width: 100%;
+}
+.showbtn{
+	padding-left: 80px;
+
+
+}
+
+
+  </style>
+
+  <script>
+
+//alert("Please Use Desktop View For Better Expeience")
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+    
+</head>
+
+<center class="c2">
+  <p3>Made With 💙
+ by Deven </p3>
+</center>
+
+<body>
+
+  <hr/>
+<nav>
+
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="https://api.whatsapp.com/send?phone=+918788887373&text=please%20add%20the%20movie">Request movie</a></li>
+  <li><a href="https://api.whatsapp.com/send?phone=+918788887373&text=want%20to%20contact%20you">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="upload.html">Upload Movies</a></li>
+
+   </ul>
+
+</nav>
+<hr/>
+  
+
+<center>
+     <h1>Welcome To Free Movie Server</h1>
+     <h2>click on Show Button to see all movies</h2>
+     
+
+
+</center>
+  <button class="nbtn" onclick="filterSelection('all')">Show</button>
+  
+  
+
+
+<!-- movie upload code  -->
+<a href="movies/Evil Dead 2013.mp4" download><div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="assets/1.jpg" alt="Mountains" style="width:100%">
+      <h4>Evil Dead 2013</h4>
+      
+    </div>
+    </a>
+  </div>
+  <a href="movies/Annabelle Creation (2017).mkv" download>
+  <div class="column nature">
+    <div class="content">
+      <img src="assets/2.jpg" alt="Lights" style="width:100%">
+      <h4>Annabelle Creation (2017)</h4>
+    </div>
+  </div>
+  <a href="movies/Insidious The Last Key (2018).mkv" download>
+  <div class="column nature">
+    <div class="content">
+      <img src="assets/3.jpg" alt="Nature" style="width:100%">
+      <h4>Insidious The Last Key (2018)</h4>
+    </div>
+  </div>
+<a href="movies/The Conjuring 2 2016.mkv" download>
+  <div class="column cars">
+    <div class="content">
+      <img src="assets/4.jpg" alt="Car" style="width:100%">
+      <h4>The Conjuring 2 2016</h4>
+    </div>
+  </div>
+  <a href="movies/dawn of justice.mkv" download>
+  <div class="column cars">
+    <div class="content">
+      <img src="assets/5.jpg" alt="Car" style="width:100%">
+      <h4>Dawn of Justice</h4>
+    </div>
+  </div>
+  <a href="movies/Suicide Squad.mkv" download>
+  <div class="column cars">
+    <div class="content">
+      <img src="assets/6.jpg" alt="Car" style="width:100%">
+      <h4>Suicide Squad</h4>
+    </div>
+  </div>
+ <a href="movies/John.Wick1.mkv" download>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/7.jpg" alt="People" style="width:100%" download>
+      <h4>John Wick Chapter 1</h4>
+    </div>
+    <a href="movies/John.Wick2.mkv" download>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/8.jpg" alt="People" style="width:100%">
+      <h4>John Wick Chapter 2</h4>
+    </div>
+  </div>
+  <a href="movies/John.Wick.3.mkv" download>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/9.jpg" alt="People" style="width:100%">
+      <h4>John Wick Chapter 3</h4>
+    </div>
+  </div>
+  <a href="movies/lost in space s1.rar" download>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/10.jpg" alt="People" style="width:100%">
+      <h4>Lost In Space S1</h4>
+    </div>
+  </div>
+  <a href="movies/lost in space s2.rar" download>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/10.jpg" alt="People" style="width:100%">
+      <h4>Lost In Space S2</h4>
+    </div>
+  </div>
+  <a href="movies/Pacific.Rim.2013.mkv" download>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/11.jpg" alt="People" style="width:100%">
+      <h4>Pacific Rim 2013</h4>
+    </div>
+  </div>
+  <a href="movies/Pacific.Rim.2013.mkv" download>
+  <div class="column people">
+    <div class="content">
+      <img src="assets/12.jpg" alt="People" style="width:100%">
+      <h4>Pacific Rim Uprising 2017</h4>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+
+  
+</body>
+</html>
