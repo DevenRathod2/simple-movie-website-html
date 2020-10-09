@@ -1,0 +1,204 @@
+
+ * {
+  box-sizing:border-box;
+}
+
+ body{
+    background-color: black;
+    padding: 20px;
+    font-family: Arial;
+    }
+
+   h1,h2{
+    color: green;
+    text-align: center;
+   }
+
+   nav{
+    color: green
+  
+ }
+/* 
+   p1{
+    text-align: center;
+    color: green;
+   } */
+  
+
+ 
+.upspace{
+  padding-top: 150px;
+}
+.card{
+
+  align-content: center;
+  border-radius: 50%;
+  
+}
+
+.container {
+  position: relative;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 70%
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 70%
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: green;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  border-radius: 70%
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
+li a:hover {
+  background-color: white;
+
+} 
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; 
+  padding: 20px;
+  /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.nbtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: green;
+  text-align: center;
+  position: center;
+
+}
+button{
+  margin: auto;
+
+}
+
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: green;
+   color: black;
+   padding-left: 50px;
+   width: 100%;
+}
+.showbtn{
+	padding-left: 80px;
+
+
+}
+/*code changes by {SD} is from here*/
+.headh1{
+    text-align: center;
+} 
+.c2{
+  text-align: center;
+  padding-bottom: 20px;
+  color: green;
+  text-align: center;
+  padding-top: 10px;
+ }
+ header h1 {
+   margin-top:40px;
+ }
+ h4{
+   text-align: center;
+   text-transform:capitalize;
+ }
+ /* .cards .column nature{
+   box-shadow: 2px 2px 4px green;
+ } */
