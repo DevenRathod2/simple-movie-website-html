@@ -1,5 +1,7 @@
 
  * {
+	 margin:0;
+	 padding:0;
   box-sizing:border-box;
 }
 
@@ -164,8 +166,13 @@ li a:hover {
 
 }
 button{
+	
   margin: auto;
 
+}
+button:hover{
+	background-color:balck;
+color:white;
 }
 
 
